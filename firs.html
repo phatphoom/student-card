@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Id Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card {
+      border: 1px solid #000;
+      width: 480px;
+      height: 250px;
+      border-radius: 12px;
+    }
+
+    .header {
+      border: 1px solid #000;
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    }
+
+    .logo img {
+      width: 50%;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .school p:nth-child(1){
+      text-align: start;
+      font-size: 28px;
+      margin: 10px;
+    }
+    .school p:nth-child(2){
+      margin: 10px 0px;
+      font-size: 2px;
+    }
+    .fa{
+      margin-left: 2px;
+      font-size: 5.5rem;
+      background-color: skyblue;
+    }
+    
+    .main{
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    }
+    .name{
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 6px;
+      margin: 5px 5px 5px 0;
+      text-align: center;
+      padding: 3px;
+    }
+    .number{
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 6px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin: 5px 5px 5px 0;
+      padding: 5px;
+    }
+    .number p{
+      margin: 0;
+    }
+    .number p:nth-child(odd){
+      color: red;
+    }
+    .end{
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    }
+    .end p{
+      margin: 0;
+    }
+    .end p:nth-child(2){
+      border: 1px solid #000;
+      border-radius: 6px;
+      margin: 8px 5px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="logo">
+        <img src="https://www.nakorn.ac.th/mis/schoolmin/gallery/logo/school_logo.png?1664436866" alt="">
+      </div>
+      <div class="school">
+        <p>โรงเรียนนครนายกวิทยาคม</p>
+        <p>NAKHONNAYOK WITTHAYAKHOM SCHOOL</p>
+      </div>
+    </div>
+    <div class="main">
+      <div class="profile">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <p style="text-align:center;margin: 4px 0;">Blood</p>
+      </div>
+      <div class="detail">
+        <div class="name">Name SureName</div>
+        <div class="number">
+          <p class="left">Student Number</p>
+          <p class="right">xxxxx</p>
+          <p class="left">ID</p>
+          <p class="right">xxxx-xxxx-xxxxx</p>
+          <p class="left">Date</p>
+          <p class="right">xx/xx/xxxx</p>
+        </div>
+      </div>
+    </div>
+    <div class="end">
+      <p></p>
+      <p>start at 17/05/2021 end at 31/03/24</p>
+    </div>
+  </div>
+</body>
+
+</html>
