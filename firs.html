@@ -19,19 +19,20 @@
 
     .card {
       border: 1px solid #000;
-      width: 480px;
-      height: 250px;
-      border-radius: 12px;
+      width: 490px;
+      height: 280px;
+      border-radius: 11px;
+      background-image: linear-gradient(64.5deg, rgba(245, 116, 185, 1) 14.7%, rgba(89, 97, 223, 1) 88.7%);
     }
 
     .header {
-      border: 1px solid #000;
       display: grid;
       grid-template-columns: 100px 1fr;
+      margin-bottom: 10px;
     }
 
     .logo img {
-      width: 50%;
+      width: 55%;
     }
 
     .logo {
@@ -40,26 +41,31 @@
       align-items: center;
     }
 
-    .school p:nth-child(1){
+    .school p:nth-child(1) {
       text-align: start;
-      font-size: 28px;
+      font-size: 32px;
       margin: 10px;
+      color: #fff;
     }
-    .school p:nth-child(2){
-      margin: 10px 0px;
+
+    .school p:nth-child(2) {
+      margin: 10px 0px ;
       font-size: 2px;
+      color: #f5e35b;
     }
-    .fa{
-      margin-left: 2px;
+
+    .fa {
+      margin-left: 3px;
       font-size: 5.5rem;
       background-color: skyblue;
     }
-    
-    .main{
+
+    .main {
       display: grid;
       grid-template-columns: 100px 1fr;
     }
-    .name{
+
+    .name {
       background-color: #fff;
       border: 1px solid #000;
       border-radius: 6px;
@@ -67,32 +73,38 @@
       text-align: center;
       padding: 3px;
     }
-    .number{
+
+    .number {
       background-color: #fff;
       border: 1px solid #000;
       border-radius: 6px;
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
       margin: 5px 5px 5px 0;
       padding: 5px;
     }
-    .number p{
+
+    .number p {
       margin: 0;
     }
-    .number p:nth-child(odd){
-      color: red;
+
+    .number p:nth-child(odd) {
+      color: #e83a74;
     }
-    .end{
+
+    .end {
       display: grid;
       grid-template-columns: 100px 1fr;
     }
-    .end p{
-      margin: 0;
-    }
-    .end p:nth-child(2){
+
+    .end p:nth-child(2) {
       border: 1px solid #000;
       border-radius: 6px;
-      margin: 8px 5px 0;
+      margin: 5px 5px 5px 0;
+      padding: 3px;
+      text-align: center;
+      position: relative;
+      top: 15px;
     }
   </style>
 </head>
@@ -114,7 +126,7 @@
         <p style="text-align:center;margin: 4px 0;">Blood</p>
       </div>
       <div class="detail">
-        <div class="name">Name SureName</div>
+        <div class="name">Name SurName</div>
         <div class="number">
           <p class="left">Student Number</p>
           <p class="right">xxxxx</p>
@@ -126,7 +138,7 @@
       </div>
     </div>
     <div class="end">
-      <p></p>
+      <br>
       <p>start at 17/05/2021 end at 31/03/24</p>
     </div>
   </div>
